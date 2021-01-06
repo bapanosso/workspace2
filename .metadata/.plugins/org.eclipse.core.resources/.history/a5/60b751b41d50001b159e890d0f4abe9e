@@ -1,0 +1,18 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+		
+		String nome = JOptionPane.showInputDialog("Qual seu nome e sobrenome?");
+		
+		
+		while (nome.length()<=5 || nome.length()>=20) {
+			nome = JOptionPane.showInputDialog("Qual seu nome e sobrenome?");
+		}
+		System.out.println("Seja bem vindo(a), " + nome.substring(0, nome.indexOf(" ")));
+	}
+
+}

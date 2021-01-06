@@ -1,0 +1,25 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDecisaoComposta {
+
+	public static void main(String[] args) {
+		
+		String produto = JOptionPane.showInputDialog("Qual o produto?").toUpperCase(); // classe J
+		int quantidade = Integer.parseInt(JOptionPane.showInputDialog("Qual a quantidade disponível?"));
+		float valor = Float.parseFloat(JOptionPane.showInputDialog("Qual o valor unitário do produto:"));
+		
+		if (quantidade<20) {
+			System.out.println("Conceder 12% de desconto no valor unitário do produto");
+			
+		}else if (quantidade<5 && quantidade>9) {
+			System.out.println("Conceder 5% de desconto no valor unitário do produto");
+			
+		}else {  
+			System.out.println("Não há necessidade de redução no valor unitário do produto");
+		}
+		
+	}
+
+}

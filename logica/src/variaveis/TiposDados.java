@@ -1,0 +1,30 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class TiposDados {
+
+	public static void main(String[] args) {
+		/*
+		 * Existem dois tipos de dados
+		 * - alfanumérico: dado que não vai ser utilizado em uma expressão matemática (ex: CEP, CPF com dígito)
+		 * 
+		 * - numérico: dado que PODE ser utilizado em uma expressão matemática
+		 * 
+		 */
+		
+		String nome = JOptionPane.showInputDialog("Qual seu nome?"); // classe J
+		int idade = Integer.parseInt(JOptionPane.showInputDialog("Qual sua idade?"));
+		double altura = Double.parseDouble(JOptionPane.showInputDialog("Qual sua altura?"));
+		double peso = Double.parseDouble(JOptionPane.showInputDialog("Qual seu peso?"));		
+		double imc = peso / (altura * altura);
+		
+
+		System.out.println("Nome: " + nome);
+		System.out.println("Idade: " + idade);
+		System.out.println("Altura: " + altura);
+		System.out.println("Peso: " + peso);
+		System.out.println("IMC: " + imc);		
+	}
+
+}

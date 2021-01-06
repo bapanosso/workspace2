@@ -1,0 +1,32 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class Carrinho {
+
+	public static void main(String[] args) {
+		/*
+		 * Nome do produto
+		 * Categoria; alimenticio, aletrodomestico, ...
+		 * Valor do produto
+		 * Quantidade do produto
+		 * Imposto do produto
+		 */
+		
+		String nomeProd = JOptionPane.showInputDialog(args); //classe J
+		String categProd = "Brinquedo";
+		double valorProd = 99.9;
+		int contProd = 1;
+		String impostoProd = "18%";
+		
+		System.out.println("Produto..... " + nomeProd);
+		System.out.println("Categoria... " + categProd);
+		System.out.println("Brinquedo... " + valorProd);
+		System.out.println("Quantidade.. " + contProd);
+		System.out.println("Imposto..... " + impostoProd);
+
+
+
+	}
+
+}

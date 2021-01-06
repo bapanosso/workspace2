@@ -1,0 +1,44 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ex4 {
+
+	public static void main(String[] args) {
+		
+		String nome = "";
+		int idade = 0;
+		
+		int maiorIdade = 0;
+		String maiorNome = "";
+		
+		int menorIdade = 0;
+		String menorNome = "";
+		
+		int contTotal = 0;
+		int contAdulto = 0;
+		float media = 0;
+		int somaIdade = 0;
+		
+		
+		do {
+			nome = JOptionPane.showInputDialog("Qual seu nome?").toLowerCase();
+			idade = Integer.parseInt(JOptionPane.showInputDialog("Qual sua idade?"));
+			
+			if (idade>=18) {
+				contAdulto += 1;
+			}
+			
+			contTotal += 1;
+			somaIdade += idade;
+			
+			media = (somaIdade / contTotal);
+			
+			JOptionPane.showMessageDialog(null,"Resultado: " + (v1 + v2));
+			
+			
+		}while (JOptionPane.showConfirmDialog(null, "Deseja continuar inserindo registros?", "Pergunta", JOptionPane.YES_NO_OPTION)==0);
+		
+	}
+
+}

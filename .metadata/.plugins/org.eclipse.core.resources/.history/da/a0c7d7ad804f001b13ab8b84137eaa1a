@@ -1,0 +1,23 @@
+package dexercicios;
+
+import javax.swing.JOptionPane;
+
+public class ex3 {
+
+	public static void main(String[] args) {
+
+		int n1 = Integer.parseInt(JOptionPane.showInputDialog("Qual o primeiro número? "));
+		int n2 = Integer.parseInt(JOptionPane.showInputDialog("Qual o segundo número? "));
+		int op = Integer.parseInt(JOptionPane.showInputDialog("Escolha a opção:\n1) Soma\n2)Subtração\n3)Multiblicação\n4)Divisão "));
+		int diarias = dias - (int) 1;
+		float custo = 80;
+
+		if(op>4 || op=0) {
+			System.out.println("Opção escolhida é invalida.");
+
+		}else{}
+
+		System.out.println("O valor total da sua estadia é R$ " + custo + " referente a " + diarias + " diárias. Lembramos que o n° de diárias é a quantidade total de dias menos 1.");
+	}
+
+}

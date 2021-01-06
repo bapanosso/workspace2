@@ -1,0 +1,60 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ex4 {
+
+	public static void main(String[] args) {
+
+		String nome = "";
+		int idade = 0;
+
+		int maiorIdade = 0;
+		String maiorNome = "";
+
+		int menorIdade = 0;
+		String menorNome = "";
+
+		int contTotal = 0;
+		int contAdulto = 0;
+		float media = 0;
+		int somaIdade = 0;
+
+		do {
+			nome = JOptionPane.showInputDialog("Qual seu nome?").toLowerCase();
+			idade = Integer.parseInt(JOptionPane.showInputDialog("Qual sua idade?"));
+
+			if (idade<=0)
+			{
+				while(idade<=0) {
+					JOptionPane.showMessageDialog(null,"Idade precisa ser maior que 0!");
+					idade = Integer.parseInt(JOptionPane.showInputDialog("Qual sua idade?"));
+				}
+			}else {
+				if (idade>=18) {
+				}
+				contAdulto = contAdulto + 1;
+			}
+			
+			if (maiorIdade<idade) {
+				maiorIdade = idade;
+				maiorNome  = nome;
+
+			}else if(menorIdade>idade) {
+				menorIdade = idade;
+				menorNome = nome;
+			}
+			
+			contTotal = contTotal + 1;
+			somaIdade =  somaIdade + idade;
+
+			media = somaIdade / contTotal;
+
+		}while (JOptionPane.showConfirmDialog(null, "Deseja continuar inserindo registros?", "Pergunta", JOptionPane.YES_NO_OPTION)==0);		
+
+		System.out.println("No total, foram registradas " + contTotal +" pessoas! A média de idade foi de " + media + " anos.");
+		System.out.println("Desses, " + contAdulto + " foram maiores de idade (+18)");
+		System.out.println("A pessoa mais experiente é a(o) " + maiorNome + " com "+ maiorIdade + " anos de idade");
+		System.out.println("A pessoa mais experiente é a(o) " + menorNome + " com "+ menorIdade + " anos de idade");
+	}
+}
