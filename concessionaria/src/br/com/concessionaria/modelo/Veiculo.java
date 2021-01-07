@@ -10,7 +10,7 @@ public class Veiculo {
 	private float valor;	
 	
 	public void acelerar(float x, float y) {
-		if (velocidadeAtual<velocidadeMaxima && status==true) {
+		if ((velocidadeAtual+x)<velocidadeMaxima && status==true) {
 			velocidadeAtual+=x;
 			velocidadeMaxima+=y;
 		}		
