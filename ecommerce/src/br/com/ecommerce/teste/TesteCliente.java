@@ -1,3 +1,5 @@
+package br.com.ecommerce.teste;
+
 import br.com.ecommerce.modelo.Cliente;
 import br.com.ecommerce.modelo.Endereco;
 

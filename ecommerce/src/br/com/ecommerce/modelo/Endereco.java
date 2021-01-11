@@ -11,7 +11,7 @@ public class Endereco {
 	private String complemento;	
 
 
-	public void getAll(String logradouro, String bairro, String cidade, String uf, String cep, String numero,
+	public void setAll(String logradouro, String bairro, String cidade, String uf, String cep, String numero,
 			String complemento) {
 		this.logradouro = logradouro;
 		this.bairro = bairro;
