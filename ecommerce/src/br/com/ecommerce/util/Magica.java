@@ -9,7 +9,7 @@ public class Magica {
 		return JOptionPane.showInputDialog(msg).toUpperCase();
 	}	
 	
-	public static int i(String msg){
+	public static int i(String msg) throws Exception{
 		return Integer.parseInt(s(msg));
 	}
 	
