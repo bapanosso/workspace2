@@ -1,0 +1,20 @@
+package dexercicios;
+
+import javax.swing.JOptionPane;
+import java.util.Arrays;
+
+
+public class ex4 {
+
+	public static void main(String[] args) {
+		
+		int n[3] = new int[3];
+
+		n[0] = Integer.parseInt(JOptionPane.showInputDialog("Qual o primeiro número? "));
+		n[1] = Integer.parseInt(JOptionPane.showInputDialog("Qual o segundo número? "));
+		n[2]= Integer.parseInt(JOptionPane.showInputDialog("Qual o terceiro número? "));
+		
+		
+	}
+
+}

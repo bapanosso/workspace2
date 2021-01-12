@@ -1,0 +1,39 @@
+package dexercicios;
+
+import javax.swing.JOptionPane;
+
+public class ex3 {
+
+	public static void main(String[] args) {
+
+		int n1 = Integer.parseInt(JOptionPane.showInputDialog("Qual o primeiro número? "));
+		int n2 = Integer.parseInt(JOptionPane.showInputDialog("Qual o segundo número? "));
+		int op = Integer.parseInt(JOptionPane.showInputDialog("Escolha a opção:\n1) Soma\n2) Subtração\n3) Multiplicação\n4) Divisão "));
+		int valor = 0;
+
+		if(op>4 || op==0) {
+			System.out.println("Opção escolhida é invalida.");
+
+		}else{
+			if(op==1) {
+				valor = n1 + n2;
+				System.out.println("A operação escolhida foi Soma de n1 e n2 com total de " + valor);
+				
+			}else if (op==2) {
+				valor = n1 - n2;
+				System.out.println("A operação escolhida foi Subtração de n1 e n2 com total de " + valor);
+				
+			}else if (op==3) {
+				valor = n1 * n2;
+				System.out.println("A operação escolhida foi Multiplicação de n1 e n2 com total de " + valor);
+				
+			}else {
+				valor = n1 / n2;
+				System.out.println("A oepração escolhida foi  Divisão de n1 e n2 com total de" + valor);
+			}
+			
+		}
+
+	}
+
+}

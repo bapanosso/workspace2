@@ -1,0 +1,20 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ex4 {
+
+	public static void main(String[] args) {
+		
+		String nome = "";
+		int idade = 0;
+		
+		do {
+			nome = JOptionPane.showInputDialog("Qual seu nome?").toLowerCase();
+			idade = Integer.parseInt(JOptionPane.showInputDialog("Qual sua idade?"));
+			JOptionPane.showMessageDialog(null,"Resultado: " + (v1 + v2));
+		}while (JOptionPane.showConfirmDialog(null, "Deseja continuar?", "Pergunta", JOptionPane.YES_NO_OPTION)==0);
+		
+	}
+
+}
